@@ -1,55 +1,89 @@
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background-color: #4cc9f0;
-    color: #12086F;
-}
-
-header {
-    background: #4361ee ;
+    padding: 0; 
+    /* font-weight: 500;  */
+    font-size: larger;
+  
+  }
+  
+  header {
+    position: fixed;
+    background: black;
     color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: 4361ee;
-    text-decoration: none;
-}
-
-header h1 {
-    margin: 0;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-}
-
-.project {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #4361ee;
-    color: #12086F;
-    position: relative;
-    bottom: 0;
+    padding: 1px;
+    position: sticky;
+    top: 0;
     width: 100%;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  a:hover{
+    transform: scale(0.9);
+  }
+  
+  section {
+    padding: 2em;
+    text-align: center;
+    height: 100vh;
+    padding-top: 80px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    margin: 0.5em 0 0.2em;
+  }
+  
+  form input, form textarea, form button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+  }
+.bg-color{
+  background-color: #0000000c;
+}
+.bg-white{
+  background-color: cream;
+}
+#home {
+  display: flex;
+}
+
+.div1, .div2 {
+  flex: 1;
+  height: 85%;
+}
+h1{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: xx-large;
+}
+.pd{
+  padding-bottom: 15%;
 }
